@@ -1,0 +1,156 @@
+/* Light Mode */
+.light-mode {
+    background-color: #f9f9f9; /* Yengilroq fon rangi */
+    color: #2c2c2c !important; /* Matn uchun quyuq kulrang */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode .player {
+    background-color: #ffffff; /* Oq rang */
+    color: #2c2c2c; /* Matn rang */
+    border: 1px solid #e0e0e0; /* Yengil kulrang chegara */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Kattaroq soyalar */
+    border-radius: 12px; /* Yengil yumaloqlik */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.light-mode .mode-toggle {
+    background-color: #ffffff; /* Tugma orqa foni */
+    border-color: #e0e0e0; /* Tugma chegara */
+    color: #2c2c2c; /* Tugma ichidagi ikon rang */
+}
+
+.light-mode .play-icon,
+.light-mode .pause-icon,
+.light-mode svg {
+    fill: #2c2c2c; /* Ikon rang */
+}
+
+.light-mode input[type="range"] {
+    background: #e0e0e0; /* Progress bar fon rangi */
+}
+
+.light-mode input[type="range"]::-webkit-slider-thumb {
+    background: #2c2c2c; /* Progress bar tugma rangi */
+}
+
+.light-mode .list {
+    background-color: #ffffff; /* List orqa foni */
+    border: 1px solid #e0e0e0; /* Yengil chegara */
+    border-radius: 8px; /* Yumaloqlik */
+    padding: 10px;
+}
+
+.light-mode li {
+    background-color: #ffffff; /* Element orqa foni */
+    color: #2c2c2c; /* Element matn rangi */
+}
+
+.light-mode li:hover {
+    background-color: #e0e0e0; /* Hover effekti */
+}
+
+.light-mode .search {
+    border: 1px solid #e0e0e0; /* Qidiruv oynasi chegarasi */
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #2c2c2c;
+}
+
+.light-mode #search-input {
+    background-color: #ffffff;
+    border-color: #e0e0e0;
+    color: #2c2c2c;
+}
+
+.light-mode #search-input:focus {
+    border-color: #b0b0b0; /* Aktiv holatda quyuqroq chegara */
+}
+
+.light-mode .voice-search-btn {
+    color: #2c2c2c; /* Ovozni qidirish tugmasi rang */
+}
+
+.light-mode .mode-toggle {
+    background-color: #ffffff; /* Tugma orqa foni */
+    border: 1px solid #e0e0e0; /* Tugma chegarasi */
+    color: #2c2c2c !important; /* Tugma ichidagi ikon rang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Yengil soya effekti */
+    border-radius: 50%; /* Tugma doira shakli */
+    padding: 10px; /* Tugma ichki bo‘shliq */
+    cursor: pointer; /* Hoverda ko‘rsatkich o‘zgaradi */
+    transition: all 0.3s ease; /* Tugma effekti */
+}
+
+.light-mode .mode-toggle:hover {
+    background-color: #f0f0f0; /* Hover qilinganda orqa fon */
+    border-color: #d0d0d0; /* Hover qilinganda chegara */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Hover qilinganda soya */
+}
+
+.light-mode .mode-toggle:active {
+    background-color: #e8e8e8; /* Tugma bosilganda fon */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Tugma bosilganda soya */
+    transform: scale(0.95); /* Tugma bosilganda kichikroq */
+}
+
+.light-mode .mode-toggle svg {
+    fill: #2c2c2c; /* Tugma ichidagi ikon rang */
+}
+
+
+/* Light mode uchun tugmalar va o'rash (wrapper_btn) */
+.light-mode .wrapper_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Tugmalar orasidagi bo'shliq */
+}
+
+.light-mode .wrapper_btn button {
+    background-color: #ffffff; /* Tugma foni */
+    border: 1px solid #cccccc; /* Tugma chegarasi */
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 20px; /* Ikona kattaligi */
+    color: #333333; /* Ikon rangi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Yengil soyalar */
+}
+
+.light-mode .wrapper_btn button:hover {
+    background-color: #f4f4f4; /* Hoverda fon (och kulrang) */
+    border-color: #b3b3b3; /* Hoverda chegara */
+    transform: scale(1.1); /* Hoverda kattalashish */
+}
+
+.light-mode .wrapper_btn button:active {
+    transform: scale(0.9); /* Bosilganda kichrayish */
+    background-color: #e6e6e6; /* Bosilganda fon (to'q kulrang) */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Bosilganda ichki soyalar */
+}
+
+/* Light mode uchun ikonalar styling */
+.light-mode .wrapper_btn i {
+    font-size: 24px; /* Ikona kattaligi */
+    color: #333333; /* Ikona rangi */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover va active effektlari */
+.light-mode .wrapper_btn button:hover i {
+    color: #1e88e5; /* Hoverda ikon rangi (ko'k) */
+    transform: scale(1.1); /* Hoverda ikon kattalashadi */
+}
+
+.light-mode .wrapper_btn button:active i {
+    color: #666666; /* Bosilganda ikon rangi (to'q kulrang) */
+    transform: scale(0.9); /* Bosilganda ikon kichrayadi */
+}

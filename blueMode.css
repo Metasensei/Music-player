@@ -1,0 +1,172 @@
+.blue-mode {
+    background-color: #0a0d2a; /* Ochroq to'q ko'k */
+    color: #e3f2fd; /* Yorqin oqish-ko'k matn */
+}
+
+.blue-mode .player {
+    background-color: #1b1f4f; /* Orta darajada ochroq ko'k */
+    color: #e3f2fd;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Tugma */
+.blue-mode .mode-toggle {
+    background-color: #1b1f4f; /* Tugma fon rangi */
+    border: 1px solid #e3f2fd; /* Tugma chegarasi */
+    color: #e3f2fd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.blue-mode .mode-toggle:hover {
+    background-color: #2a2f6b; /* Hover holati */
+    border-color: #e3f2fd;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.blue-mode .mode-toggle:active {
+    background-color: #3b417e; /* Tugma bosilganda fon */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    transform: scale(0.95);
+}
+
+.blue-mode .mode-toggle svg {
+    fill: #e3f2fd; /* Tugma ichidagi ikon rang */
+}
+
+/* Ro'yxat va elementlar */
+.blue-mode .list {
+    background-color: #0a0d2a; /* Ro'yxat fon rangi */
+    color: #e3f2fd;
+}
+
+.blue-mode .list li {
+    background-color: #1b1f4f;
+    color: #e3f2fd;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.blue-mode .list li:hover {
+    background-color: #2a2f6b; /* Hover holati */
+    color: #ffffff;
+}
+
+/* Qidiruv input */
+.blue-mode #search-input {
+    background-color: #1b1f4f;
+    color: #e3f2fd;
+    border: 1px solid #2a2f6b;
+}
+
+.blue-mode #search-input:focus {
+    border-color: #3b417e; /* Fokus holati */
+}
+
+/* Ovozni boshqarish */
+.blue-mode #volume-slider {
+    background-color: #ffffff;
+}
+
+.blue-mode #volume-slider::-webkit-slider-thumb {
+    background-color: #2a2f6b;
+}
+
+.blue-mode #volume-slider::-moz-range-thumb {
+    background-color: #2a2f6b;
+}
+
+/* Progress bar */
+.blue-mode input[type="range"] {
+    background: #1b1f4f;
+}
+
+.blue-mode input[type="range"]::-webkit-slider-thumb {
+    background: #2a2f6b;
+}
+
+.blue-mode input[type="range"]::-moz-range-thumb {
+    background: #2a2f6b;
+}
+
+/* Ikonlar */
+.blue-mode .play-icon,
+.blue-mode .pause-icon,
+.blue-mode .time-display i {
+    fill: #e3f2fd; /* Oqish-ko'k ikon ranglari */
+}
+
+/* H1 sarlavha */
+.blue-mode h1 {
+    color: #e3f2fd;
+}
+
+/* Progress bar hover */
+.blue-mode input[type="range"]:hover {
+    background: #2a2f6b; /* Hoverdagi progress bar */
+}
+
+/* Voice Search Button */
+.blue-mode .voice-search-btn {
+    color: #e3f2fd;
+}
+
+.blue-mode .voice-search-btn:hover {
+    color: #ffffff; /* Hover holati */
+}
+/* Time Slider */
+.blue-mode #time-slider {
+    background: #ffffff; /* Progress bar fon rangi */
+    border-radius: 5px;
+    height: 6px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.blue-mode #time-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #2a2f6b; /* Thumb rangi */
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.blue-mode #time-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #2a2f6b; /* Thumb rangi */
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.blue-mode #time-slider:hover {
+    background: #2a2f6b; /* Hoverdagi progress bar fon rangi */
+}
+
+/* Hover va Active holati */
+.blue-mode #time-slider:active::-webkit-slider-thumb {
+    background: #3b417e; /* Active thumb rangi */
+}
+
+.blue-mode #time-slider:active::-moz-range-thumb {
+    background: #3b417e; /* Active thumb rangi */
+}
+.blue-mode .wrapper_btn button {
+    color: #e3f2fd !important;
+    
+}
+.blue-mode .mode-toggle i{
+    color: #e3f2fd !important;
+}
+.blue-mode .dark-mode .play-icon, .dark-mode .pause-icon, .dark-mode svg{
+    color: #e3f2fd !important;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card mx-auto" style="max-width: 400px;">
+            <div class="card-body">
+                <h3 id="form-title" class="text-center">Login</h3>
+                <form id="auth-form">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password" required />
+                    </div>
+                    <div id="role-section" class="mb-3 d-none">
+                        <label for="role" class="form-label">Role</label>
+                        <select class="form-select" id="role">
+                            <option value="user" selected>User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <button id="auth-btn" type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <div class="text-center mt-3">
+                    <span id="toggle-text">Yangi foydalanuvchimisiz?</span>
+                    <a href="#" id="toggle-form">Ro'yxatdan o'tish</a>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="./index.html" class="btn btn-secondary w-100">Back to Player</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Ro'yxatdan o'tish tugmasini Telegramga yo'naltirish uchun o'zgartirish
+        document.getElementById("toggle-form").addEventListener("click", (e) => {
+            e.preventDefault();
+            window.open("https://t.me/Muhammad_Linkdev", "_blank");
+        });
+    </script>
+</body>
+</html>

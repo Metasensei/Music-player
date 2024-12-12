@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Container */
+.container {
+    width: clamp(100%, 100%, 1200px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* Player */
+.player {
+    width: 100%;
+    max-width: 500px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    position: relative;
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.text {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.list {
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+
+    height: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: #888 #1f1f1f;
+}
+
+.list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.list::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+    border: 2px solid #1f1f1f;
+}
+
+li {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.playing {
+    background-color: #444;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.mode-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mode-toggle svg {
+    fill: #fff;
+}
+
+.time-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.time-display {
+    font-size: 14px;
+}
+
+input[type="range"] {
+    width: 100%;
+    max-width: 300px;
+    background-color: #333;
+    border-radius: 5px;
+    height: 4px;
+    appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.play-icon,
+.pause-icon {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .player {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.dark-mode .mode-toggle {
+    color: #fff;
+    border-color: #fff;
+}
+
+.dark-mode .play-icon,
+.dark-mode .pause-icon,
+.dark-mode svg {
+    fill: #fff;
+}
+
+.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.light-mode .player {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .mode-toggle {
+    color: #333;
+    border-color: #333;
+}
+
+.light-mode .play-icon,
+.light-mode .pause-icon,
+.light-mode svg {
+    fill: #333;
+}
+
+.wrapper_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#volume-slider {
+    width: 100%;
+    max-width: 300px;
+    background-color: #333;
+    border-radius: 5px;
+    height: 4px;
+    appearance: none;
+}
+
+#volume-slider::-webkit-slider-thumb {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+
+.search {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    padding: 15px 20px;
+    
+}
+
+#search-input:focus {
+    border-color: #888;
+}
+
+
+/* Voice search button */
+.voice-search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.voice-search-btn:hover {
+    color: #888;
+}
+
+.video_intro_fa{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: black;
+}
+
+
+.video_intro{
+    width: 100%;
+    height: 100%;
+}
+/* Progress bar dizayni */
+input[type="range"] {
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #444;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+input[type="range"]:hover {
+    background: #666;
+}
+button:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(0.95);
+}
+
+.mode-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mode-toggle i {
+    font-size: 20px;
+
+    
+}
+
+/* Dark Mode */
+
+
+/* Light Mode */
+
+/* Green Mode */
+
+
+/* Blue Mode */
+
+/* Tugmalar uchun umumiy styling */
+.wrapper_btn button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 18px; /* Ikona kattaligi */
+    color: #ffffff; /* Default ikon va matn rangi */
+}
+
+.wrapper_btn button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hoverda fon */
+    transform: scale(1.1); /* Hoverda tugmani kattalashtirish */
+}
+
+.wrapper_btn button:active {
+    transform: scale(0.9); /* Tugma bosilganda kichrayish */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Ikonalar styling */
+.wrapper_btn i {
+    font-size: 24px; /* Ikona kattaligi */
+    transition: transform 0.3s ease;
+}
+
+/* Tugma hover va active effektlari */
+.wrapper_btn button:hover i {
+    transform: scale(1.1); /* Ikon kattalashadi */
+}
+
+.wrapper_btn button:active i {
+    transform: scale(0.9); /* Ikon kichrayadi */
+}

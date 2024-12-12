@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enjoy your favorite music with our web player. Play, pause, and switch between tracks with ease.">
+    <meta name="keywords" content="music player, audio, mp3, web music, play, pause, next, previous, volume control">
+    <meta name="author" content="Muhammad Karimov">
+    <meta property="og:title" content="Music Player - Enjoy Your Music">
+    <meta property="og:description" content="Listen to the best tracks online with easy controls.">
+    <meta property="og:image" content="./../images/preview.webp">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <title>Music Player - Enjoy Your Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="./images/avatar.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./darkMode.css">
+    <link rel="stylesheet" href="./lightMode.css">
+    <link rel="stylesheet" href="./greenMode.css">
+    <link rel="stylesheet" href="./blueMode.css">
+</head>
+
+<body class="dark-mode">
+    <div class="video_intro_fa">
+        <video src="./images/intro.mp4" autoplay muted class="video_intro"></video>
+    </div>
+    <audio src="" id="player"></audio>
+
+    <div class="container">
+        <button id="toggle-mode" class="mode-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+
+        <div class="player">
+            <h1>Select a track</h1>
+            <div class="wrapper_btn">
+                <button class="prev">
+             
+                        <i class="fas fa-backward"></i>
+             
+                    <span class="text" style="display: none;">Previous</span>
+                </button>
+                <button class="pause">
+                    <i class="fas fa-pause"></i>
+                    <span class="text" style="display: none;">Pause</span>
+                </button>
+                <button class="next">
+                    <i class="fas fa-forward"></i>
+                    <span class="text" style="display: none;">Next</span>
+                </button>
+            </div>
+
+            <div class="time-control">
+                <span class="time-display" id="current-time">00:00</span>
+                <input type="range" id="time-slider" value="0" min="0" step="1">
+                <span class="time-display" id="total-time">00:00</span>
+            </div>
+
+            <div class="time-control">
+                <span class="time-display">
+                    <i class="fas  fa-volume-up"></i>
+                </span>
+                <input type="range" id="volume-slider" value="50" min="0" max="100">
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="search for track">
+            <button class="voice-search-btn" id="voice-search-btn">🎤</button>
+        </div>
+
+        <ul class="list"></ul>
+    </div>
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
+
+
